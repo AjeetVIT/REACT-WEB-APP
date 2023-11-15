@@ -1,0 +1,12 @@
+<script>
+    var product={
+        Name : "TV",
+        Price: 340000.44
+    }
+ product.Price;
+    document.write(`Name=${product.Name}<br>Price=${product.Price}<br>`)
+document.write(`Is Price a member of Product : ${"Price" in product}<br> `);
+for(var key in product){
+    document.write(key +"<br>");
+}
+</script>

@@ -1,0 +1,14 @@
+<script>
+    const UserId= Symbol("UserId");
+    var UserDetails={
+        [UserId] : "John_nit",
+        UserName: "John",
+        Email : "Jhon@gmail.com"
+    }
+    for(var key in UserDetails){
+        document.write(key + "<br>");
+    }
+    document.write(UserDetails[UserId]);
+
+    
+</script>

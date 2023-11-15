@@ -1,0 +1,18 @@
+<script>
+    document.write(`
+    Min = ${Number.MIN_SAFE_INTEGER}<br>
+    Max = ${Number.MAX_SAFE_INTEGER}<br> `
+    );
+    
+    var categories=["Electronics","Footwear","Faishon"];
+
+    categories.splice(1,1);
+    categories.map(function(category){
+        document.write(`<a href="#">${category}</a><br>`)
+    })
+    var sales = [10000,46600,570000,56000000,24000];
+    var result=sales.find(function(value){
+        return value>50000;
+    });
+    document.write(result);
+</script>

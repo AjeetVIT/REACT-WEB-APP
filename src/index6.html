@@ -1,0 +1,17 @@
+<script>
+    var product={
+        Name: "TV",
+        MFD : new Date("2022-10-29 20:40:23.89")
+    }
+    var weekdays = ["Sunday","Monday","Tue","WED","Thu","Fri","Saturday"];
+    var months=["jan","Feb","Mar","Apr","May","June","July","Aug","Sept","Oct","Nov","Dec"];
+    document.write(
+       ` Name : ${product.Name} <br>
+       Date : ${product.MFD.getDate()}<br>
+       Day : ${weekdays[product.MFD.getDay()]}<br>
+       Month : ${months[product.MFD.getMonth()]}<br>
+       year : ${product.MFD.getFullYear()}
+       `
+       
+    );
+</script>

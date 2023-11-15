@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="module">
+        import {Hello,welcome} from "./Library/modules/DemoModule.js";
+        import {Addition} from "./Library/modules/MathModule.js";
+       
+        document.querySelector("h2").innerHTML = Hello();
+         document.querySelector("p").innerHTML=welcome() +"<br>" +Addition(20,40);
+    </script>
+</head>
+<body>
+   <h2></h2> 
+   <p></p>
+</body>
+</html>
